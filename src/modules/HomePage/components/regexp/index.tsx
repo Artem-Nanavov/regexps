@@ -1,5 +1,10 @@
 import checkRegExp from 'library/utils/checkRegExp';
-import React, {useState, useEffect} from 'react';
+import copyText from 'library/utils/copyText';
+import React, {
+	useState,
+	useEffect,
+	useRef,
+} from 'react';
 import styles from './styles.scss';
 
 interface IRegexp {
@@ -14,6 +19,7 @@ const Regexp = ({
 	const [text, setText] = useState('');
 	const [isValid, setIsValid] = useState<boolean | null>(null);
 	const [border, setBorder] = useState('#EEEEEF');
+	const inputRef = useRef<any>(null);
 
 	useEffect(() => {
 		if (text.trim().length > 0) {
@@ -48,6 +54,8 @@ const Regexp = ({
 						cursor: 'pointer',
 						border: '1px solid #EEEEEF',
 					}}
+					ref={inputRef}
+					onClick={(e) => copyText(e, inputRef)}
 					className={styles.regexp__text}
 					readOnly
 					value={pattern}
@@ -55,7 +63,6 @@ const Regexp = ({
 				/>
 
 				<input
-					// style={{border: '1px solid #ff3300'}}
 					style={{
 						border: `1px solid ${border}`,
 					}}
