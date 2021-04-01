@@ -44,7 +44,9 @@ const Regexp = ({
 			className={styles.regexp}
 		>
 			<div className={styles.regexp__header}>
-				<h1 className={styles.regexp__title}>{title}</h1>
+				<h3 className={styles.regexp__title}>
+					{title.length > 25 ? `${title.substr(0, 25)}...` : title}
+				</h3>
 			</div>
 
 			<div className={styles.regexp__nav}>
