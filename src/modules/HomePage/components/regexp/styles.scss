@@ -1,0 +1,35 @@
+@import 'resources/styles/mixins.scss';
+
+.regexp {
+	width: 100%;
+	padding: 8px 0;
+	border-radius: 3px;
+	@include display(grid);
+	@include grid-row-gap(16px);
+	background-color: #FFF;
+
+	&__header {
+		@include display(flex);
+		@include justify-content(space-between);
+		padding: 0 8px;
+		padding-bottom: 8px;
+		border-bottom: 1px solid #33CCFF;
+	}
+
+	&__nav {
+		padding: 0 8px;
+		@include display(grid);
+		@include grid-row-gap(24px);
+	}
+
+	&__title {
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	&__text {
+		width: 100%;
+		padding: 8px;
+		border-radius: 3px;
+	}
+}

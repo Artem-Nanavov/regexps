@@ -1,0 +1,7 @@
+@import 'resources/styles/mixins.scss';
+
+.regexps {
+	@include display(grid);
+	@include grid-gap(30px);
+	@include grid-template-columns(264px 264px 264px 264px);
+}

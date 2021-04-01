@@ -1,0 +1,77 @@
+[
+	{
+		"uuid": "1248b520-85f1-49c0-8445-57793b40c05a",
+    "title": {
+      "en": "Firstname / lastname validation",
+      "ru": "Проверка имени или фамилии (EN)"
+    },
+    "pattern": "/(-?([A-Z].\\s)?([A-Z][a-z]+)\\s?)+([A-Z]'([A-Z][a-z]+))?/g",
+    "placeholder": "Olivia Kolomar",
+    "description": {
+      "en": "Check if the text is a valid firstname or lastname. It allows Characters,'- and space only",
+      "ru": "Проверяет, что вводимый текст является фамилией или именем. Допускаются: ' и -"
+    },
+    "tags": "name,lastname,firstname,characters,validate,strings",
+    "priority": 4
+  },
+  {
+		"uuid": "82aba4fb-1070-49fb-9200-c4f211038aea",
+    "title": {
+			"en": "E-Mail format",
+			"ru": "E-Mail формат"
+		},
+    "pattern": "/^([A-Z|a-z|0-9](\\.|_){0,1})+[A-Z|a-z|0-9]\\@([A-Z|a-z|0-9])+((\\.){0,1}[A-Z|a-z|0-9]){2}\\.[a-z]{2,3}$/gm",
+    "placeholder": "test@gmail.com",
+    "description": {
+      "en": "Checking email for correctness.",
+      "ru": "Проверка почты на корректность."
+    },
+    "tags": "symbol,e-mail,mail,email",
+    "priority": 1
+  },
+  {
+		"uuid": "cf8e3b98-5789-45a1-b825-81335390f759",
+    "title": {
+			"en": "E-Mail format",
+			"ru": "E-Mail формат"
+		},
+    "pattern": "/^([A-Z|a-z|0-9](\\.|_){0,1})+[A-Z|a-z|0-9]\\@([A-Z|a-z|0-9])+((\\.){0,1}[A-Z|a-z|0-9]){2}\\.[a-z]{2,3}$/gm",
+    "placeholder": "test@gmail.com",
+    "description": {
+      "en": "Checking email for correctness.",
+      "ru": "Проверка почты на корректность."
+    },
+    "tags": "symbol,e-mail,mail,email",
+    "priority": 1
+  },
+  {
+		"uuid": "9ba1d2ae-6540-4bfe-a2d1-03b847727f3e",
+    "title": {
+			"en": "E-Mail format",
+			"ru": "E-Mail формат"
+		},
+    "pattern": "/^([A-Z|a-z|0-9](\\.|_){0,1})+[A-Z|a-z|0-9]\\@([A-Z|a-z|0-9])+((\\.){0,1}[A-Z|a-z|0-9]){2}\\.[a-z]{2,3}$/gm",
+    "placeholder": "test@gmail.com",
+    "description": {
+      "en": "Checking email for correctness.",
+      "ru": "Проверка почты на корректность."
+    },
+    "tags": "symbol,e-mail,mail,email",
+    "priority": 1
+  },
+  {
+		"uuid": "006eb22c-441b-4f08-af9a-449a37f4f443",
+    "title": {
+			"en": "E-Mail format",
+			"ru": "E-Mail формат"
+		},
+    "pattern": "/^([A-Z|a-z|0-9](\\.|_){0,1})+[A-Z|a-z|0-9]\\@([A-Z|a-z|0-9])+((\\.){0,1}[A-Z|a-z|0-9]){2}\\.[a-z]{2,3}$/gm",
+    "placeholder": "test@gmail.com",
+    "description": {
+      "en": "Checking email for correctness.",
+      "ru": "Проверка почты на корректность."
+    },
+    "tags": "symbol,e-mail,mail,email",
+    "priority": 1
+  }
+]
