@@ -1,0 +1,15 @@
+@import 'resources/styles/mixins.scss';
+
+.notification {
+	@include position(fixed);
+	top: 16px;
+	border-radius: 2px;
+	@include display(flex);
+	@include justify-content(center);
+	@include align-items(center);
+	width: 200px;
+	padding: 8px 0;
+	color: #FFF;
+	background-color: #00CC00;
+	@include transition(all 0.3s)
+}

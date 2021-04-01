@@ -5,6 +5,7 @@ import React, {
 	useEffect,
 	useRef,
 } from 'react';
+import Settings from 'library/common/entities/settings';
 import styles from './styles.scss';
 
 interface IRegexp {
@@ -39,6 +40,11 @@ const Regexp = ({
 		}
 	}, [isValid]);
 
+	const _copyText = (e: any) => {
+		copyText(e, inputRef);
+		Settings.setCopiedText();
+	};
+
 	return (
 		<li
 			className={styles.regexp}
@@ -57,7 +63,7 @@ const Regexp = ({
 						border: '1px solid #EEEEEF',
 					}}
 					ref={inputRef}
-					onClick={(e) => copyText(e, inputRef)}
+					onClick={_copyText}
 					className={styles.regexp__text}
 					readOnly
 					value={pattern}

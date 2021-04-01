@@ -1,5 +1,6 @@
 {
 	"compilerOptions": {
+		"experimentalDecorators": true,
 		"baseUrl": "./src",
 		"outDir": "/dist",
 		"module": "esnext",
@@ -11,6 +12,7 @@
 		"allowSyntheticDefaultImports": true,
 		"forceConsistentCasingInFileNames": true,
 		"strict": true,
+		"typeRoots": ["node_modules/@types", "src/typings"],
 		"suppressImplicitAnyIndexErrors": true,
 		"resolveJsonModule": true,
 		"plugins": [

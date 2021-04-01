@@ -9,9 +9,9 @@ const RegexpsList = () => {
 	return (
 		<ul className={styles.regexps}>
 			{
-				regexps.map((regexp) => (
+				regexps.map((regexp, i) => (
 					<Regexp
-						key={regexp.uuid}
+						key={`${regexp.uuid}${`${i}-`}`}
 						title={regexp.title.ru}
 						pattern={regexp.pattern}
 					/>
