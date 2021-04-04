@@ -1,0 +1,11 @@
+@import 'resources/styles/mixins.scss';
+
+.searchPanel {
+	width: 100%;
+	padding: 8px;
+	background-color: #FFF;
+	border-radius: 3px;
+	@include display(grid);
+	@include grid-template-columns(1fr 1fr);
+	@include grid-column-gap(16px);
+}

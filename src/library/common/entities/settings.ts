@@ -1,33 +1,39 @@
 import getLangFromBrowser from 'library/utils/getLangFromBrowser';
 import {
+	action,
+	observable,
 	makeAutoObservable,
 } from 'mobx';
 
 class Settings {
-	_lang = getLangFromBrowser();
+	@observable _lang = getLangFromBrowser();
 
-	_theme = 'light';
+	@observable _theme = 'light';
 
-	_isCopiedText = false;
+	@observable _isCopiedText = false;
 
 	constructor() {
 		makeAutoObservable(this);
 	}
 
-	changeLang(lang: string) {
+	@action changeLang(lang: string) {
 		this._lang = lang;
 	}
 
-	toggleTheme(theme: string) {
+	@action toggleTheme(theme: string) {
 		this._theme = theme;
 	}
 
-	setCopiedText() {
-		this._isCopiedText = true;
+	@action setCopiedText() {
+		this._changeIsCopiedText(true);
 
 		setTimeout(() => {
-			this._isCopiedText = false;
+			this._changeIsCopiedText(false);
 		}, 3000);
+	}
+
+	@action private _changeIsCopiedText(flag: boolean): void {
+		this._isCopiedText = flag;
 	}
 }
 

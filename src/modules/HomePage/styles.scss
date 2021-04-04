@@ -1,7 +1,15 @@
 @import 'resources/styles/mixins.scss';
 
 .homePage {
+	margin-top: 32px;
 	width: 100vw;
 	@include display(flex);
 	@include justify-content(center);
+
+	&__container {
+		max-width: 1140px;
+		width: 100%;
+		@include grid-row-gap(64px);
+		@include display(grid);
+	}
 }

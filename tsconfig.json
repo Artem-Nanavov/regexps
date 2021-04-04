@@ -5,6 +5,7 @@
 		"outDir": "/dist",
 		"module": "esnext",
 		"target": "es5",
+		"lib": ["es6", "dom", "es2018.promise", "ES2017", "ES2016.Array.Include"],
 		"sourceMap": true,
 		"allowJs": true,
 		"jsx": "react",

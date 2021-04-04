@@ -12,7 +12,6 @@
     "pattern": "/(-?([A-Z].\\s)?([A-Z][a-z]+)\\s?)+([A-Z]'([A-Z][a-z]+))?/g",
     "placeholder": "Amon Bower",
     "tags": "name,lastname,firstname,characters,validate,strings",
-    "nickname": "@Archakov06",
     "priority": 3
   },
   {
@@ -28,7 +27,6 @@
       "ru": "Соответствует элементам периодической таблицы"
     },
     "tags": "elements,chem,strings",
-    "nickname": "@limitedeternity",
     "priority": 0
   },
   {
@@ -44,7 +42,6 @@
     "pattern": "([^ !$`&*()+]|(\\[ !$`&*()+]))+",
     "placeholder": "/usr/lib/libgccpp.so",
     "tags": "unix,path,directory,other,strings",
-    "nickname": "@limitedeternity",
     "priority": 1
   },
   {
@@ -60,7 +57,6 @@
     "pattern": "(\\.)[a-z]{1,4}$",
     "placeholder": "myarchive.zip",
     "tags": "extension,filename,other,strings",
-    "nickname": "@Archakov06",
     "priority": 1
   },
   {
@@ -76,7 +72,6 @@
     "pattern": "/(<script(\\s|\\S)*?</script>)|(<style(\\s|\\S)*?</style>)|(<!--(\\s|\\S)*?-->)|(</?(\\s|\\S)*?>)/g",
     "placeholder": "<span>my text</span>",
     "tags": "html,tags,closing,opening,html tag,other",
-    "nickname": "@limitedeternity",
     "priority": 0
   },
   {
@@ -92,7 +87,6 @@
     "pattern": "/([01]?[0-9]|2[0-3]):[0-5][0-9](:[0-5][0-9])?/g",
     "placeholder": "23:00",
     "tags": "times,24 hour,format,time,numbers,date-time",
-    "nickname": "@limitedeternity",
     "priority": 3
   },
   {
@@ -108,7 +102,6 @@
     "pattern": "^(?![+-]?\\d{4,5}-?(?:\\d{2}|W\\d{2})T)(?:|(\\d{4}|[+-]\\d{5})-?(?:|(0\\d|1[0-2])(?:|-?([0-2]\\d|3[0-1]))|([0-2]\\d{2}|3[0-5]\\d|36[0-6])|W([0-4]\\d|5[0-3])(?:|-?([1-7])))(?:(?!\\d)|T(?=\\d)))(?:|([01]\\d|2[0-4])(?:|:?([0-5]\\d)(?:|:?([0-5]\\d)(?:|\\.(\\d{3})))(?:|[zZ]|([+-](?:[01]\\d|2[0-4]))(?:|:?([0-5]\\d)))))$",
     "placeholder": "2005-08-09",
     "tags": "iso-8601,format,date,time,times,durations,date-time",
-    "nickname": "@Archakov06",
     "priority": 3
   },
   {
@@ -123,7 +116,6 @@
     "pattern": "^(0?[1-9]|[12][0-9]|3[01])([ \\/\\-])(0?[1-9]|1[012])\\2([0-9][0-9][0-9][0-9])(([ -])([0-1]?[0-9]|2[0-3]):[0-5]?[0-9]:[0-5]?[0-9])?$",
     "placeholder": "01/01/1990",
     "tags": "time,format,dd/mm/yyyy,dd,mm,yy,date-time",
-    "nickname": "@Archakov06",
     "priority": 3
   },
   {
@@ -139,7 +131,6 @@
     "pattern": "^(0?[1-9]|1[0-2])[/](0?[1-9]|[12]\\d|3[01])[/](19|20)\\d{2}$",
     "placeholder": "01/31/2017",
     "tags": "time,format,m/d/yyyy,mm/dd/yyyy,date-time",
-    "nickname": "@limitedeternity",
     "priority": 3
   },
   {
@@ -152,7 +143,6 @@
     "placeholder": "#wtf",
     "description": { "en": "Matches hashtags", "ru": "Соответствует хэштегам" },
     "tags": "hashtags,strings,other,strings",
-    "nickname": "@limitedeternity",
     "priority": 2
   },
   {
@@ -168,7 +158,6 @@
     "pattern": "(?:#|0x)?(?:[0-9A-Fa-f]{2}){3,4}",
     "placeholder": "rgb(255, 255, 255)",
     "tags": "color,hex,rgb,hex color,other",
-    "nickname": "@limitedeternity",
     "priority": 2
   },
   {
@@ -184,7 +173,6 @@
     "pattern": "/rgb\\((?:([0-9]{1,2}|1[0-9]{1,2}|2[0-4][0-9]|25[0-5]), ?)(?:([0-9]{1,2}|1[0-9]{1,2}|2[0-4][0-9]|25[0-5]), ?)(?:([0-9]{1,2}|1[0-9]{1,2}|2[0-4][0-9]|25[0-5]))\\)/g",
     "placeholder": "#ffffff",
     "tags": "color,rgb,strings,other",
-    "nickname": "@limitedeternity",
     "priority": 2
   },
   {
@@ -200,7 +188,6 @@
       "ru": "Палиндромы из 2-5 букв. Пример: noon / dad"
     },
     "tags": "palindromes,other,strings",
-    "nickname": "@limitedeternity",
     "priority": 0
   },
   {
@@ -216,7 +203,6 @@
       "ru": "Соответствует src аттрибуту <img>."
     },
     "tags": "html,image,img,html tag,src,attribute,other",
-    "nickname": "@Archakov06",
     "priority": 0
   },
   {
@@ -232,7 +218,6 @@
       "ru": "Любое значение с плав. запятой н.п: 1.2, 2.009 или .987, но не 1.00 или 239"
     },
     "tags": "float,point,value,numbers",
-    "nickname": "@Archakov06",
     "priority": 0
   },
   {
@@ -248,7 +233,6 @@
     "pattern": "^(([a-zA-Z]:)|(\\\\{2}\\w+)\\$?)(\\\\(\\w[\\w ]*.*))+$",
     "placeholder": "C:\\Windows\\file.txt",
     "tags": "windows,path,directory,other,strings",
-    "nickname": "@Archakov06",
     "priority": 0
   },
   {
@@ -261,7 +245,6 @@
     "placeholder": "2001:db8:a0b:12f0::1",
     "description": { "en": "Match IPv6 addresses", "ru": "Соответствует IPv6 адресу" },
     "tags": "ip,ipv6,ip adress,adress,other",
-    "nickname": "@Archakov06",
     "priority": 3
   },
   {
@@ -277,7 +260,6 @@
       "ru": "Долларовые суммы с символом $"
     },
     "tags": "dollar,amounts,symbol,numbers",
-    "nickname": "@Archakov06",
     "priority": 0
   },
   {
@@ -293,7 +275,6 @@
       "ru": "Соответствует почтовым индексам амер. и канад. формата"
     },
     "tags": "postal code,zip code,zip,code,us,canadian,numbers",
-    "nickname": "@Archakov06",
     "priority": 0
   },
   {
@@ -309,7 +290,6 @@
       "ru": "Соответствует JS комментариям (вкл. многострочные)"
     },
     "tags": "js,comments,standard,other",
-    "nickname": "@limitedeternity",
     "priority": 0
   },
   {
@@ -325,7 +305,6 @@
       "ru": "Соответствует любому URL с YouTube"
     },
     "tags": "youtube,youtube id,uri",
-    "nickname": "@limitedeternity",
     "priority": 2
   },
   {
@@ -341,7 +320,6 @@
       "ru": "Соответствует CSS комментарию (вкл. многострочные)"
     },
     "tags": "css,comments,standard,other",
-    "nickname": "@Archakov06",
     "priority": 0
   },
   {
@@ -354,7 +332,6 @@
     "placeholder": "192.168.0.1",
     "description": { "en": "Match IPv4 addresses", "ru": "Соответствует IPv4 адресу" },
     "tags": "ip,ipv4,adress,ip adress,other",
-    "nickname": "@Archakov06",
     "priority": 3
   },
   {
@@ -370,7 +347,6 @@
     "pattern": "^[a-zA-Z0-9_-]{3,16}$",
     "placeholder": "BrendanEich",
     "tags": "characters,username,user,strings",
-    "nickname": "@Archakov06",
     "priority": 5
   },
   {
@@ -386,7 +362,6 @@
       "ru": "Соответствует тел. номеру рос. и амер. формата. Пример: +79991234567 / 444-555-1234"
     },
     "tags": "phone,digits,phone number,numbers",
-    "nickname": "@limitedeternity",
     "priority": 4
   },
   {
@@ -402,7 +377,6 @@
       "ru": "Соответствует доменному имени (только латиница)"
     },
     "tags": "domain,name,site,www,strings",
-    "nickname": "@Archakov06",
     "priority": 4
   },
   {
@@ -418,7 +392,6 @@
       "ru": "Проверка почты на корректность."
     },
     "tags": "symbol,e-mail,mail,email",
-    "nickname": "@limitedeternity",
     "priority": 5.1
   },
   {
@@ -434,7 +407,6 @@
       "ru": "Проверка почты на корректность."
     },
     "tags": "symbol,e-mail,mail,email",
-    "nickname": "@limitedeternity",
     "priority": 5
   },
   {
@@ -450,7 +422,6 @@
       "ru": "Соответствует URL с протоколом"
     },
     "tags": "url,protocol,http,link,uri",
-    "nickname": "@Archakov06",
     "priority": 4
   },
   {
@@ -466,7 +437,6 @@
       "ru": "Надежность пароля. Пример: SGhowk1E"
     },
     "tags": "password,strength,pwd,strings",
-    "nickname": "@limitedeternity",
     "priority": 4
   },
   {
@@ -482,7 +452,6 @@
       "ru": "Соответствует положительным значениям"
     },
     "tags": "positive,float,number,integer,numbers",
-    "nickname": "@Archakov06",
     "priority": 3
   },
   {

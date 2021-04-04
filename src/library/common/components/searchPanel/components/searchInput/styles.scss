@@ -1,0 +1,40 @@
+@import 'resources/styles/mixins.scss';
+
+.searchInput {
+	border-radius: 3px;
+	border: 1px solid #EEEEEF;
+	@include display(flex);
+	@include justify-content(space-between);
+
+	&__input {
+		width: 100%;
+		padding: 8px;
+	}
+
+	&__clear {
+		width: 34px;
+		height: 34px;
+		@include position(relative);
+		@include display(flex);
+		@include align-items(center);
+		@include justify-content(center);
+
+		span {
+			width: 15px;
+			height: 1px;
+			@include position(relative);
+			background-color: #333;
+			@include transform(rotate(45deg));
+		
+			&::before {
+				content: '';
+				right: 0px;
+				@include position(absolute);
+				width: 15px;
+				height: 1px;
+				@include transform(rotate(-90deg));
+				background-color: #333;
+			}	
+		}
+	}
+}

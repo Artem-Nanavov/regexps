@@ -14,12 +14,6 @@
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
-    "@types/enzyme": "^3.10.5",
-    "@types/enzyme-adapter-react-16": "^1.0.6",
-    "@types/jsonwebtoken": "^8.5.0",
-    "@types/react": "16.7.17",
-    "@types/react-dom": "16.0.11",
-    "@types/react-router-dom": "5.1.6",
     "clean-webpack-plugin": "1.0.0",
     "connected-react-router": "6.0.0",
     "date-fns": "^2.17.0",
@@ -59,6 +53,12 @@
     "webpack-notifier": "1.7.0"
   },
   "devDependencies": {
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/react": "16.7.17",
+    "@types/react-dom": "16.0.11",
+    "@types/react-router-dom": "5.1.6",
     "@babel/cli": "^7.8.4",
     "@babel/core": "7.2.0",
     "@babel/node": "7.2.0",

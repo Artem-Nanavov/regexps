@@ -10,12 +10,14 @@ import styles from './styles.scss';
 
 interface IRegexp {
 	title: string;
-	pattern: any;
+	pattern: string;
+	placeholder: string;
 }
 
 const Regexp = ({
 	title,
 	pattern,
+	placeholder,
 }: IRegexp) => {
 	const [text, setText] = useState('');
 	const [isValid, setIsValid] = useState<boolean | null>(null);
@@ -48,6 +50,7 @@ const Regexp = ({
 	return (
 		<li
 			className={styles.regexp}
+			style={{boxShadow: '0 5px 15px 0 rgb(0 0 0 / 4%)'}}
 		>
 			<div className={styles.regexp__header}>
 				<h3 className={styles.regexp__title}>
@@ -74,6 +77,7 @@ const Regexp = ({
 					style={{
 						border: `1px solid ${border}`,
 					}}
+					placeholder={placeholder}
 					className={styles.regexp__text}
 					value={text}
 					type="text"
