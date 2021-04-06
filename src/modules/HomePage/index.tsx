@@ -1,6 +1,7 @@
 import React from 'react';
 import Notification from 'library/common/components/notification';
 import SearchPanel from 'library/common/components/searchPanel';
+import Footer from 'library/common/components/footer';
 import RegexpsList from './components/regexpsList';
 import styles from './styles.scss';
 
@@ -13,6 +14,8 @@ const HomePage = () => {
 				<SearchPanel />
 
 				<RegexpsList />
+
+				<Footer />
 			</div>
 
 			<Notification />
