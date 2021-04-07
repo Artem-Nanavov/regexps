@@ -20,9 +20,9 @@ class Regexps {
 		this._searchPrase = prase;
 
 		this._items = regexps.filter((item) => (
-			item.tags.includes(prase.trim())
-			|| item.title.en.includes(prase.trim())
-			|| item.title.ru.includes(prase.trim())));
+			item.tags.toLocaleLowerCase().includes(prase.trim().toLocaleLowerCase())
+			|| item.title.en.toLocaleLowerCase().includes(prase.trim().toLocaleLowerCase())
+			|| item.title.ru.toLocaleLowerCase().includes(prase.trim().toLocaleLowerCase())));
 	}
 
 	@action setSelect(select: string | null) {
